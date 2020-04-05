@@ -1,8 +1,13 @@
+#!/usr/bin/env node
+console.log("正在初始化");
+
 const download = require('download-git-repo');
 const program = require('commander');
 const path = require('path');
 const fs = require('fs');
 const glob = require('glob');
+
+console.log("正在初始化");
 
 const rootName = path.basename(process.cwd()); //命令执行目录
 const dir = glob.sync('*'); // 执行目录下的文件
